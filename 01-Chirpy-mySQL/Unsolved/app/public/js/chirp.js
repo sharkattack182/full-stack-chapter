@@ -44,8 +44,8 @@ $("#chirp-submit").on("click", function(event) {
       row.addClass("chirp");
 
       row.append("<p>" + newChirp.author + " chirped: </p>");
-      row.append("<p>" + newChirp.body + "</p>");
-      row.append("<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>");
+      row.append("<p>" + newChirp.chirp + "</p>");
+      row.append("<p>At " + moment(newChirp.time_created).format("h:mma on dddd") + "</p>");
 
       $("#chirp-area").prepend(row);
 
